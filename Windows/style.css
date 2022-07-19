@@ -1,3 +1,13 @@
 body{
     background-color: aquamarine;
 }
+#carousel{
+    height:500px;
+    overflow: hidden;
+   }
+   /*
+    #carousel{
+    height:100vh;
+    overflow: hidden;
+   }
+   */
