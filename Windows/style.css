@@ -2,12 +2,14 @@ body{
     background-color: aquamarine;
 }
 #carousel{
-    height:700px;
+    height:650px;
+    width: 700px;
     overflow: hidden;
    }
 hr{
     background-color: black;
     height: 10px;
+
 }
 video{
     height: 600px;
