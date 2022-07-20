@@ -15,6 +15,10 @@ video{
     height: 600px;
     width: 700px;
 }
+.tabs{
+ display: inline-block;
+  tab-size: 2 ;
+}
    /*
     #carousel{
     height:100vh;
