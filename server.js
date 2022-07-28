@@ -10,11 +10,12 @@ const app = express();
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'Windows')))
+app.set('views', path.join(__dirname, 'Windows'));
 app.use('/', route);
 
 mongoose.connect(process.env.MOONGOO,{useNewURLParser: true, useUnifiedTopology: true})
 .then(()=>{
-    app.listen(3000,() => {
+    app.listen(5000,() => {
         console.log("Server is running.")
     })
 })

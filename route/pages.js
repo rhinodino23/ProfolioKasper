@@ -14,16 +14,18 @@ router.get('/Experience', (reg, res) =>{
 router.get('/Education', (reg, res) =>{
     res.render('education')
 })
-router.get('/Programming_Languages', (reg, res) =>{
-    res.render('programming_languages')
+router.get('/Programming_Languges', (reg, res) =>{
+    console.log("I am running")
+    res.render('Programming_Languges')
 })
 
 router.post('/submitContact', (req,res) =>{
     const contact = new contacts({
-        fname: res.body.fname,
-        lname:res.body.lname,
-        email:res.body.email,
-        commentSection: res.body.commentSection
+        fname: req.body.fname,
+        lname:req.body.lname,
+        phoneNum:req.body.email,
+        email:req.body.email,
+        commentSection: req.body.commentSection
     });
 
     contacts.collection.insertOne(contact)

@@ -8,6 +8,9 @@ var contactSchema = new mongoose.Schema({
     lname:{
         type: String
     },
+    phoneNum:{
+        type: String
+    },
     email:{
         type: String
     },
