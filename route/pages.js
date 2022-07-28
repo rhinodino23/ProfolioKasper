@@ -4,16 +4,16 @@ const router = express.Router();
 router.get('/', (reg, res) =>{
     res.render('index')
 })
-router.get('/contact', (reg, res) =>{
+router.get('/Contact', (reg, res) =>{
     res.render('contact')
 })
-router.get('/experience', (reg, res) =>{
+router.get('/Experience', (reg, res) =>{
     res.render('experience')
 })
-router.get('/education', (reg, res) =>{
+router.get('/Education', (reg, res) =>{
     res.render('education')
 })
-router.get('/programming_languages', (reg, res) =>{
+router.get('/Programming_Languages', (reg, res) =>{
     res.render('programming_languages')
 })
 
