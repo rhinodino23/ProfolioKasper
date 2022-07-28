@@ -1,4 +1,5 @@
 //const { urlencoded } = require("body-parser");
+require("dotenv").config()
 const bodyParser = require("body-parser");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'Windows')))
 app.use('/', route);
 
-mongoose.connect("mongodb+srv://userName:passWord@cluster0.w0f6fzl.mongodb.net/portfoliodb",{useNewURLParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MOONGOO,{useNewURLParser: true, useUnifiedTopology: true})
 .then(()=>{
     app.listen(3000,() => {
         console.log("Server is running.")
