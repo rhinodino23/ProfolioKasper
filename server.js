@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/', route);
 
-mongoose.connect("",{userNewURLParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://JuniorGhost:FurBaby32@cluster0.w0f6fzl.mongodb.net/portfoliodb",{userNewURLParser: true, useUnifiedTopology: true})
 .then(()=>{
     app.listen(3000,() => {
         console.log("Server is running.")
