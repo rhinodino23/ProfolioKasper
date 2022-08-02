@@ -15,7 +15,7 @@ router.get("/Education", (req, res) => {
   res.render("education");
 });
 router.get("/Programming_Languges", (req, res) => {
-  console.log("I am running");
+  //console.log("I am running");
   res.render("Programming_Languges");
 });
 
