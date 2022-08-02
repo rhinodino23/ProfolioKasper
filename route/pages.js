@@ -23,7 +23,7 @@ router.post("/submitContact", (req, res) => {
   const contact = new contacts({
     fname: req.body.fname,
     lname: req.body.lname,
-    phoneNum: req.body.email,
+    phoneNum: req.body.phoneNum,
     email: req.body.email,
     commentSection: req.body.commentSection,
   });
