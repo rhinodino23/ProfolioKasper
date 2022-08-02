@@ -1,4 +1,3 @@
-//const { urlencoded } = require("body-parser");
 require("dotenv").config();
 const bodyParser = require("body-parser");
 const express = require("express");
