@@ -1,0 +1,39 @@
+<%- include('layouts/header.ejs')%>
+      <!--Start of the contact form -->
+      
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-5">
+                <form action="/submitContact" method="post">
+                    <h2 class = md-4> Here is the best way to contact me: </h2>
+                    <input type="text" class="form-control mb-3" name="fname" aria-describedby="First Name" placeholder="First Name">
+                    <input type="text" class="form-control mb-3" name="lname" aria-describedby="Last Name" placeholder="Last Name">
+
+                    <h6>I will contact you as soon as possible if needed.</h6>
+
+                    <input type="text" class="form-control mb-3" name="phoneNum" aria-describedby="pNumber" placeholder="Phone Number">
+                    <input type="email" class="form-control mb-3" name="email" aria-describedby="emailHelp" placeholder="Your Email">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Reason for Contact</label>
+                        <textarea class="form-control" name="commentSection" rows="3"></textarea>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+                <div class="col-4">
+                <!--Start of the Map -->
+                    <br>
+                    <div id="map-container-google-1" class=" z-depth-1-half map-container" style="height: 100%">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13917.009167162229!2d-98.5334563688276!3d29.304274214520003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c57620df39603%3A0x6dd54079639010f1!2sTexas%20A%26M%20University-San%20Antonio!5e0!3m2!1sen!2sus!4v1657942189292!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                      style = "border:0" allowfullscreen></iframe>
+                    </div>  
+                  </div>
+                 <!--End of the Map -->
+            </div>
+        </div> 
+      <!--End of the contact form-->
+    <br> 
+    <br>
+    <br>
+</body>
+</html>
