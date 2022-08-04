@@ -5,18 +5,17 @@ const contacts = require("./models/contact");
 router.get("/", (req, res) => {
   res.render("index");
 });
-router.get("/Contact", (req, res) => {
+router.get("/contact", (req, res) => {
   res.render("contact");
 });
-router.get("/Experience", (req, res) => {
+router.get("/experience", (req, res) => {
   res.render("experience");
 });
-router.get("/Education", (req, res) => {
+router.get("/education", (req, res) => {
   res.render("education");
 });
-router.get("/Programming_Languges", (req, res) => {
-  //console.log("I am running");
-  res.render("Programming_Languges");
+router.get("/programminglanguges", (req, res) => {
+  res.render("programminglanguages");
 });
 
 router.post("/submitContact", (req, res) => {
