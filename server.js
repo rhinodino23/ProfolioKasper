@@ -12,13 +12,18 @@ app.use(express.static(path.join(__dirname, "Extras")));
 app.set("views", path.join(__dirname, "windows"));
 app.use("/", route);
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
 mongoose
   .connect(process.env.MOONGOO, {
     useNewURLParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen(5000, () => {
+    app.listen(port, () => {
       console.log("Server is running.");
     });
   });
