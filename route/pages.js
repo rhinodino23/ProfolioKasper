@@ -14,7 +14,7 @@ router.get("/experience", (req, res) => {
 router.get("/education", (req, res) => {
   res.render("education");
 });
-router.get("/programminglanguges", (req, res) => {
+router.get("/programminglanguages", (req, res) => {
   res.render("programminglanguages");
 });
 
