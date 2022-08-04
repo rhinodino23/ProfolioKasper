@@ -18,7 +18,7 @@ if (port == null || port == "") {
 }
 
 mongoose
-  .connect(process.env.MOONGOO, {
+  .connect(process.env.MONGOO, {
     useNewURLParser: true,
     useUnifiedTopology: true,
   })
